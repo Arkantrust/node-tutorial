@@ -1,6 +1,5 @@
 var http = require('http');
 var util = require('util');
-var fs = require('fs');
 
 //create a server object:
 http.createServer(function (req, res) {
@@ -11,5 +10,5 @@ http.createServer(function (req, res) {
     res.write('<h1> Connected! </h1>'); //write a response to the client
     res.end(msg); //end the response
 
-    console.log("Connected to: " + address);
+    console.log("Connection: " + address);
 }).listen(8080); //the server object listens on port 8080
